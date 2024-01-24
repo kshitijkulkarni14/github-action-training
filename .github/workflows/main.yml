@@ -1,7 +1,10 @@
 name: wf1
 on:
-  - push
-  - workflow_dispatch
+  schedule:
+    - cron: "0 2 * * 1-5"
+  push:
+  workflow_dispatch:
+
 jobs:
   job1:
     runs-on: ubuntu-latest
