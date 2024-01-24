@@ -16,9 +16,10 @@ jobs:
     steps:
       - name: step1 for testing
         run: echo "hello world!"
-      - name: step 2
-        run: |
+              sleep 10
+      - run: |
             echo "step 2"
             pwd
             ls
+            sleep 10
         
